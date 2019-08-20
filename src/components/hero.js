@@ -18,24 +18,32 @@ export default class Hero extends PureComponent {
 
         switch (keyPress) {
             case "ArrowUp":
-                this.setState({ translateY: translateY - 5 });
-                hero.style.transform = `translate(${translateX}px, ${translateY - 5}px)`;
-                clearKey();
+                if (translateY > 0) {
+                    this.setState({ translateY: translateY - 5 });
+                    hero.style.transform = `translate(${translateX}px, ${translateY - 5}px)`;
+                    clearKey();
+                }
                 break;
             case "ArrowDown":
-                this.setState({ translateY: translateY + 5 });
-                hero.style.transform = `translate(${translateX}px, ${translateY + 5}px)`;
-                clearKey();
+                if (translateY < 400) {
+                    this.setState({ translateY: translateY + 5 });
+                    hero.style.transform = `translate(${translateX}px, ${translateY + 5}px)`;
+                    clearKey();
+                }
                 break;
             case "ArrowRight":
-                this.setState({ translateX: translateX + 5 });
-                hero.style.transform = `translate(${translateX + 5}px, ${translateY}px)`;
-                clearKey();
+                if (translateX < 750) {
+                    this.setState({ translateX: translateX + 5 });
+                    hero.style.transform = `translate(${translateX + 5}px, ${translateY}px)`;
+                    clearKey();
+                }
                 break;
             case "ArrowLeft":
-                this.setState({ translateX: translateX - 5 });
-                hero.style.transform = `translate(${translateX - 5}px, ${translateY}px)`;
-                clearKey();
+                if (translateX > 0) {
+                    this.setState({ translateX: translateX - 5 });
+                    hero.style.transform = `translate(${translateX - 5}px, ${translateY}px)`;
+                    clearKey();
+                }
                 break;
             default:
                 return null;
