@@ -21,7 +21,7 @@ export default class App extends Component {
   handleKeyDown = (event) => {
     this.setState({ keyPress: event.key })
   }
-   clearKey = () => {
+   clearKeyPress = () => {
       this.setState({ keyPress: "" })
    }
   
@@ -36,7 +36,7 @@ export default class App extends Component {
         ref={this.App}
       >
         <Nav />
-        <WorldMap keyPress={keyPress} clearKey={this.clearKey} />
+        <WorldMap keyPress={keyPress} clearKeyPress={this.clearKeyPress} />
       </main>
     );
   }

@@ -135,3 +135,26 @@ table {
     grid-column: 11/15;
     grid-row: 16/21;
 }
+
+.friend-modal, .shop-modal, .foe-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 500px;
+    width: 800px;
+    font-size: 7rem;
+    background-color: rgba(0, 0, 0, 0.591);
+}
+
+.friend-modal {
+    color: yellow;
+}
+
+.shop-modal {
+    color: rgb(70, 227, 255);
+}
+
+.foe-modal {
+    color: red;
+}
