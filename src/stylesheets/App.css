@@ -77,7 +77,9 @@ table {
 .home {
     text-align:center;
     font-size: 10rem;
-    color: red;
+    margin-top: 2rem;
+    color: #f77f00;
+    text-shadow: 0 0 3px black;
 }
 
 button, input[type=submit] {
