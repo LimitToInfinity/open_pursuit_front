@@ -64,7 +64,6 @@ export default class App extends Component {
     const { heros } = this.state;
     const otherHeros = heros.filter(hero => hero.id !== updatedHero.id)
     const newHeros = [...otherHeros, updatedHero]
-    console.log(heros, otherHeros, newHeros)
     this.setState({ heros: newHeros, })
   }
 
