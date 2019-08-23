@@ -96,7 +96,7 @@ export default class NewHeroForm extends Component {
             <form className="new-hero-form" onSubmit={this.handleSubmit}>
                 <div className="new-hero-form-top">
                     <div className="new-hero-form-name">
-                        <label htmlFor="heroName">Declare Your Name Hero:</label>
+                        <label htmlFor="heroName">Declare Your Name Hero</label>
                         <input
                             type="text"
                             name="heroName"
@@ -106,7 +106,7 @@ export default class NewHeroForm extends Component {
                         </input>
                     </div>
                     <div className="new-hero-form-weapon">
-                        <label htmlFor="weapon_id">Choose Your Weapon:</label>
+                        <label htmlFor="weapon_id">Choose Your Weapon</label>
                         <select name="weapon_id" className="weapon-select" onChange={this.handleChange}>
                             { this.weaponChoices() }
                         </select>
@@ -114,7 +114,7 @@ export default class NewHeroForm extends Component {
                 </div>
                 <div className="new-hero-form-bottom">
                     <div className="new-hero-form-power-container">
-                        <label>Select Your Powers:</label>
+                        <label>Select Your Powers</label>
                         <div className="new-hero-form-powers">
                             { this.powerChoices() }
                         </div>

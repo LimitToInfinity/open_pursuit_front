@@ -87,7 +87,6 @@ export default class HeroCard extends Component {
                         changeIsClicked={this.changeIsClicked}
                         updateHero={updateHero}
                     />
-                    <button onClick={this.changeIsClicked}>Nevermind</button>
                 </div>
             );
         }

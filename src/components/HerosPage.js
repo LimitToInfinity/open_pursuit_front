@@ -33,7 +33,12 @@ export default class HerosPage extends Component {
             <section className="heros-page">
                 <h2>Heros Page</h2>
                 {isError && <ErrorMessage errorMessage={errorMessage} />}
-                <button className="new-hero" onClick={this.handleClick}>Create New Hero</button>
+                <button className="new-hero" onClick={this.handleClick}>
+                    {isClicked
+                        ? "Nevermind"
+                        : "Create New Hero"
+                    }
+                </button>
                 {isClicked && 
                     <NewHeroForm 
                         handleClick={this.handleClick}

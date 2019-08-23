@@ -133,6 +133,27 @@ button:focus, input[type=submit]:focus {
     width: 100%;
 }
 
+.weapon-select {
+    height: 60px;
+    font-size: 2rem;
+}
+
+input[name=heroName] {
+    height: 60px;
+    font-size: 2rem;
+}
+
+.new-hero-form label, .update-hero-form label {
+    font-size: 1.5rem;
+    color: navy;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.update-hero-form label {
+    padding-top: 5px;
+}
+
 .new-hero-form-top, .new-hero-form-bottom {
     display: flex;
     margin: 10px 0;
@@ -150,9 +171,36 @@ button:focus, input[type=submit]:focus {
     color: black;
 }
 
+.update-hero-form input[type=text], .update-hero-form select  {
+    width: 95%;
+}
+
+.update-hero-form input[type=submit] {
+    margin: 10px 0;
+}
+
+.update-hero-form-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
 .checkbox {
-    color: black;
-    padding: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox label {
+    color: #f77f00;
+    text-shadow: 0 0 1px black;
+    font-size: 2rem;
+    padding-right: 10px;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.checkbox input[type=checkbox] {
+    height: 20px;
+    width: 20px;
 }
 
 .hero-cards-container {
@@ -265,7 +313,7 @@ button:focus, input[type=submit]:focus {
     width: 50px;
     background-color: darkorange;
     color: white;
-    transition: all 0.7s;
+    /* transition: all 0.7s; */
 }
 
 .foe {

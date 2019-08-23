@@ -90,11 +90,12 @@ export default class UpdateHeroForm extends Component {
     render() {
 
         const { heroName, weapon_id } = this.state;
+        const { changeIsClicked } = this.props;
 
         return (
             <form className="update-hero-form" onSubmit={this.handleSubmit}>
                 <div className="update-hero-form-name">
-                    <label htmlFor="heroName">Declare Your Name Hero:</label>
+                    <label htmlFor="heroName">Declare Your Name Hero</label>
                     <input
                         type="text"
                         name="heroName"
@@ -104,7 +105,7 @@ export default class UpdateHeroForm extends Component {
                     </input>
                 </div>
                 <div className="update-hero-form-weapon">
-                    <label htmlFor="weapon_id">Choose Your Weapon:</label>
+                    <label htmlFor="weapon_id">Choose Your Weapon</label>
                     <select 
                         className="weapon-select"
                         name="weapon_id"
@@ -115,12 +116,15 @@ export default class UpdateHeroForm extends Component {
                     </select>
                 </div>
                 <div className="update-hero-form-power-container">
-                    <label>Select Your Powers:</label>
+                    <label>Select Your Powers</label>
                     <div className="update-hero-form-powers">
                         { this.powerChoices() }
                     </div>
                 </div>
-                <input type="submit" value="Re-Emerge!"></input>
+                <div className="update-hero-form-buttons">
+                    <input type="submit" value="Re-Emerge!"></input>
+                    <button onClick={changeIsClicked}>Nevermind</button>
+                </div>
             </form>
         );
     }
