@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-import Phaser from "phaser";
+
+// import Phaser from 'phaser';
+// import { IonPhaser } from '@ion-phaser/react';
 
 import Hero from "./hero";
 import Foe from "./foe";
@@ -10,25 +12,61 @@ import ShopModal from "./ShopModal";
 import FoeModal from "./FoeModal";
 
 export default class WorldMap extends Component {
+    // state = {
+    //     initialize: true,
+    //     game: {
+    //       width: "100%",
+    //       height: "100%",
+    //       type: Phaser.AUTO,
+    //       scene: {
+    //         init: function() {
+    //           this.cameras.main.setBackgroundColor('#24252A')
+    //         },
+    //         create: () => {
+    //           this.helloWorld = this.add.text(
+    //             this.cameras.main.centerX, 
+    //             this.cameras.main.centerY, 
+    //             "Hello World", { 
+    //               font: "40px Arial", 
+    //               fill: "#ffffff" 
+    //             }
+    //         );
+    //         this.helloWorld.setOrigin(0.5);
+    //         },
+    //         update: function() {
+    //           this.helloWorld.angle += 1;
+    //         }
+    //       }
+    //     }
+    // }
+
+    // state = {
+    //     bird: {
+    //         x: 50,
+    //         y: 100,
+    //         radius: 20
+    //     }
+    // }
+
     state = {
         showFriendMenu: false,
         showShopMenu: false,
         showFoeMenu: false,
-    }
+    };
 
     showFriendModal = () => {
-        this.setState({ showFriendMenu: !this.state.showFriendMenu })
-        setTimeout(() => this.setState({ showFriendMenu: false }), 1300)
+        this.setState({ showFriendMenu: !this.state.showFriendMenu });
+        setTimeout(() => this.setState({ showFriendMenu: false }), 1300);
     }
 
     showShopModal = () => {
-        this.setState({ showShopMenu: !this.state.showShopMenu })
-        setTimeout(() => this.setState({ showShopMenu: false }), 1300)
+        this.setState({ showShopMenu: !this.state.showShopMenu });
+        setTimeout(() => this.setState({ showShopMenu: false }), 1300);
     }
 
     showFoeModal = () => {
-        this.setState({ showFoeMenu: !this.state.showFoeMenu })
-        setTimeout(() => this.setState({ showFoeMenu: false }), 1300)
+        this.setState({ showFoeMenu: !this.state.showFoeMenu });
+        setTimeout(() => this.setState({ showFoeMenu: false }), 1300);
     }
 
     // config = {
@@ -82,13 +120,33 @@ export default class WorldMap extends Component {
     //     return false
     //   }
 
+    // draw = () => {
+    //     const ctx = this.refs.canvas.getContext("2d");
+    //     // change this colour to change the colour of your 
+    //     // "pen" in the canvas 
+    //     ctx.fillStyle = "green";
+    //     ctx.beginPath();
+    //     ctx.arc(this.state.bird.x, this.state.bird.y,                        
+    //             this.state.bird.radius, 0, 2 * Math.PI);
+    //     ctx.fill();
+    //     ctx.stroke();
+    // }
+
+    // componentDidMount() {
+    //     this.draw();
+    // }
+
     render() {
         const { showFriendMenu, showShopMenu, showFoeMenu } = this.state;
         const { keyPress, clearKeyPress } = this.props;
 
+        // const { initialize, game } = this.state;
+
         return (
             <div className="game-container">
                 <h2>World Map</h2>
+                {/* <IonPhaser game={game} initialize={initialize} /> */}
+                {/* <canvas ref="canvas" width={800} height={500} /> */}
                 <section className="world-map">
                     <Hero
                         keyPress={keyPress}
