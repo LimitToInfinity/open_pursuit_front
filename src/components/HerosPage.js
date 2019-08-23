@@ -31,7 +31,7 @@ export default class HerosPage extends Component {
 
         return (
             <section className="heros-page">
-                <h2>Heros Page</h2>
+                <h2>Heroes Page</h2>
                 {isError && <ErrorMessage errorMessage={errorMessage} />}
                 <button className="new-hero" onClick={this.handleClick}>
                     {isClicked

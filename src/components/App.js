@@ -7,6 +7,7 @@ import Home from "./Home";
 import WorldMap from './worldmap';
 import HerosPage from "./HerosPage";
 import AppNotFound from "./AppNotFound";
+import OpenPursuitLogo from "./../openPursuit.png";
 
 export default class App extends Component {
   constructor(){
@@ -95,7 +96,10 @@ export default class App extends Component {
         >
 
           <nav className="nav">
-            <h1>Open Pursuit!</h1>
+            <div className="logo">
+              <img alt="Open Pursuit Logo" src={OpenPursuitLogo} />
+              <h1>Open Pursuit!</h1>
+            </div>
             <section className="links">
               <Link className="link" to="/">Home</Link>
               <Link className="link" to="/worldmap/">World Map</Link>

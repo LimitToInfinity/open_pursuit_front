@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade|Forum|Gruppo|Josefin+Slab|Monofett|Poiret+One|Walter+Turncoat&display=swap');
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -52,11 +54,13 @@ table {
     box-sizing: border-box;
 }
 
+/* Bungee+Shade|Forum|Gruppo|Josefin+Slab|Monofett|Poiret+One|Walter+Turncoat */
 .app {
     min-height: 100vh;
     min-width: 100wh;
     font-family: arial;
     background-color: hsl(0, 0%, 97%);
+    font-family: Forum, arial;
 }
 
 .nav {
@@ -65,6 +69,7 @@ table {
     justify-content: space-between;
     padding: 40px;
     background-color: black;
+    font-family: Bungee Shade, arial;
     /* background-color: #1be7ff; */
 }
 
@@ -72,14 +77,26 @@ table {
     font-size: 4rem;
     color: #f77f00;
     text-shadow: 0 0 3px white;
+    font-family: Monofett, arial;
 }
 
-.home {
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 100px;
+    width: 100px;
+}
+
+.home h2{
     text-align:center;
     font-size: 10rem;
     margin-top: 2rem;
     color: #f77f00;
     text-shadow: 0 0 3px black;
+    font-family: Josefin Slab, arial;
 }
 
 button, input[type=submit] {
@@ -112,10 +129,10 @@ button:focus, input[type=submit]:focus {
 .heros-page > h2 {
     margin: 20px 0;
     text-align: center;
-    font-size: 4rem;
+    font-size: 5rem;
     color: #f77f00;
     text-shadow: 0 0 3px black;
-
+    font-family: Josefin Slab, arial;
 }
 
 .new-hero {
@@ -240,6 +257,7 @@ input[name=heroName] {
     color: #d62828;
     text-shadow: 0 0 3px black;
     font-size: 2.2rem;
+    /* font-family: Walter Turncoat, arial; */
 }
 
 #powers-label {
@@ -294,11 +312,12 @@ input[name=heroName] {
 }
 
 .game-container h2 {
-    font-size: 3.5rem;
+    font-size: 4rem;
     height: 50px;
     margin: 30px 0;
     color: #f77f00;
     text-shadow: 0 0 3px black;
+    font-family: Josefin Slab, arial;
 }
 
 .world-map {
