@@ -104,7 +104,7 @@ export default class App extends Component {
             <section className="links">
               <Link className="link" to="/">Home</Link>
               <Link className="link" to="/worldmap/">World Map</Link>
-              <Link className="link" to="/heros/">Heros Page</Link>
+              <Link className="link" to="/heros/">Heroes Page</Link>
             </section>
           </nav>
 
