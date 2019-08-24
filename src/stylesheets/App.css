@@ -322,6 +322,10 @@ input[name=heroName] {
     font-size: 1.5rem;
 }
 
+.game-key h6 {
+    font-size: 2rem;
+}
+
 .game-key h6, .game-key p {
     padding-bottom: 20px;
     color: #f77f00;
