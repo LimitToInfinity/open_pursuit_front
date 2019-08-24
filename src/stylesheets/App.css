@@ -308,7 +308,34 @@ input[name=heroName] {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    height: 550px;
+    height: 610px;
+}
+
+.world-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.game-key {
+    width: 100%;
+    padding-right: 20px;
+    font-size: 1.5rem;
+}
+
+.game-key h6, .game-key p {
+    padding-bottom: 20px;
+    color: #f77f00;
+    text-shadow: 0 0 1px black;
+}
+
+.game-key .keys {
+    color: red;
+    font-size: 1.8rem;
+}
+
+.world-right-side {
+    width: 100%;
+    padding-left: 20px;
 }
 
 .game-container h2 {

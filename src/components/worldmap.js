@@ -147,21 +147,31 @@ export default class WorldMap extends Component {
                 <h2>World Map</h2>
                 {/* <IonPhaser game={game} initialize={initialize} /> */}
                 {/* <canvas ref="canvas" width={800} height={500} /> */}
-                <section className="world-map">
-                    <Hero
-                        keyPress={keyPress}
-                        clearKeyPress={clearKeyPress}
-                        showFriendModal={this.showFriendModal}
-                        showShopModal={this.showShopModal}
-                        showFoeModal={this.showFoeModal}
-                    />
-                    <Foe />
-                    <Friend />
-                    <Shop />
-                    {showFriendMenu && <FriendModal />}
-                    {showShopMenu && <ShopModal />}
-                    {showFoeMenu && <FoeModal />}
-                </section>
+                <div className="world-container">
+                    <div className="game-key">
+                        <h6>Controls</h6>
+                        <p>Move with Arrow Keys</p>
+                        <p className="keys">↑ ↓ → ←</p>
+                        <p>Action</p>
+                        <p className="keys">a</p>
+                    </div>
+                    <section className="world-map">
+                        <Hero
+                            keyPress={keyPress}
+                            clearKeyPress={clearKeyPress}
+                            showFriendModal={this.showFriendModal}
+                            showShopModal={this.showShopModal}
+                            showFoeModal={this.showFoeModal}
+                        />
+                        <Foe />
+                        <Friend />
+                        <Shop />
+                        {showFriendMenu && <FriendModal />}
+                        {showShopMenu && <ShopModal />}
+                        {showFoeMenu && <FoeModal />}
+                    </section>
+                    <div className="world-right-side"></div>
+                </div>
             </div>
         );
     }
