@@ -13,8 +13,7 @@ export default class HeroCard extends Component {
         });
     }
 
-    herosURL = "http://localhost:3000/heros/";
-    heroAttributesURL = "http://localhost:3000/hero_attributes/";
+    herosURL = "https://openpursuitback.herokuapp.com/heros/";
 
    changeIsClicked = () => {
         const { isClicked } = this.state;

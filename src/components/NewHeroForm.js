@@ -12,7 +12,7 @@ export default class NewHeroForm extends Component {
     handleSubmit = (event) => {
         event.preventDefault();
 
-        const herosURL = "http://localhost:3000/heros/"
+        const herosURL = "https://openpursuitback.herokuapp.com/heros/"
 
         const { heroName, weapon_id, powers } = this.state;
         const { handleClick, handleError, noError, newHero } = this.props;

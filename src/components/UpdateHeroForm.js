@@ -16,7 +16,7 @@ export default class UpdateHeroForm extends Component {
         const { id } = hero;
         const { heroName, weapon_id, powers } = this.state;
 
-        const herosURL = "http://localhost:3000/heros/"
+        const herosURL = "https://openpursuitback.herokuapp.com/heros/"
 
         const powerIds = powers.map(power => power.id)
 

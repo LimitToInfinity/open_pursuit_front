@@ -23,9 +23,10 @@ export default class App extends Component {
     this.App = React.createRef();
   }
 
-  herosURL = "http://localhost:3000/heros/"
-  weaponsURL = "http://localhost:3000/weapons/"
-  powersURL = "http://localhost:3000/powers/"
+  backendURL = "https://openpursuitback.herokuapp.com/"
+  herosURL = `${this.backendURL}heros/`
+  weaponsURL = `${this.backendURL}weapons/`
+  powersURL = `${this.backendURL}powers/`
 
   async componentDidMount() {
     this.App.current.focus();
