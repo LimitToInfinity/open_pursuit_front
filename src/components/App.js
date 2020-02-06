@@ -29,7 +29,7 @@ export default class App extends Component {
   powersURL = `${this.backendURL}powers/`
 
   async componentDidMount() {
-    this.App.current.focus();
+    // this.App.current.focus();
 
     try {
       const herosResponse = await fetch(this.herosURL)
