@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import Checkbox from "./Checkbox";
+import Option from "./Option";
 
 export default class UpdateHeroForm extends Component {
     state = {
@@ -21,7 +22,8 @@ export default class UpdateHeroForm extends Component {
         const powerIds = powers.map(power => power.id)
 
         const heroBody = {
-            hero: { name: heroName,
+            hero: { 
+                name: heroName,
                 weapon_id,
                 power_ids: ["", ...powerIds],
             }
@@ -48,7 +50,7 @@ export default class UpdateHeroForm extends Component {
 
         return allWeapons.map(weapon => {
             const { id, name } = weapon;
-            return <option value={id} key={id}>{name}</option>;
+            return <Option key={id} id={id} name={name} />;
         });
     }
 
