@@ -5,7 +5,7 @@
   "dependencies": {
     "@ion-phaser/core": "^1.1.0",
     "@ion-phaser/react": "^1.1.2",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "phaser": "^3.19.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
